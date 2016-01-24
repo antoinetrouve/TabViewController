@@ -9,6 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface City : NSObject
+{
+    // City attribut
+    NSString* name;
+    NSString* region;
+    NSString* country;
+    int nbHab;
+}
+
+//Initialize getter and setter
 @property(strong, nonatomic) NSString* name;
 @property(strong, nonatomic) NSString* region;
 @property(strong, nonatomic) NSString* country;

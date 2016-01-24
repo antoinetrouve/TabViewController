@@ -9,5 +9,6 @@
 #import "City.h"
 
 @implementation City
+//Accessor Getter and setter
 @synthesize name,region,country,nbHab;
 @end

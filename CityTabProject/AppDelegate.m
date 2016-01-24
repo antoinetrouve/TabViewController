@@ -7,16 +7,56 @@
 //
 
 #import "AppDelegate.h"
+#import "City.h"
+#import "CityTableViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
+{
+    NSMutableArray* cities;
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    cities = [NSMutableArray arrayWithCapacity:20];
+    
+    //create data to test application
+    City *paris = [City new];
+    paris.name = @"Paris";
+    paris.region = @"Isle of France";
+    paris.country = @"France";
+    paris.nbHab = 1200000;
+    [cities addObject:paris];
+
+    City *ny = [City new];
+    ny.name = @"New-York";
+    ny.region = @"New-York";
+    ny.country = @"United States";
+    ny.nbHab = 18000000;
+    [cities addObject:ny];
+    
+    
+    City *london = [City new];
+    london.name = @"London";
+    london.region = @"Great London";
+    london.country = @"England";
+    london.nbHab = 45000000;
+    [cities addObject:london];
+    
+    City *laval = [City new];
+    laval.name = @"Laval";
+    laval.region = @"Loire's country";
+    laval.country = @"France";
+    laval.nbHab = 60000;
+    [cities addObject:laval];
+    
+    //integrates data into cityViewController which is linked with TableView.
+    CityTableViewController* ctvc = [CityTableViewController new];
+    ctvc.cities = cities;
     return YES;
 }
 
