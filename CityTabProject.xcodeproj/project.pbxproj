@@ -13,6 +13,8 @@
 		EC96A3761C54E3CA00B94BF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC96A3741C54E3CA00B94BF5 /* Main.storyboard */; };
 		EC96A3781C54E3CA00B94BF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC96A3771C54E3CA00B94BF5 /* Assets.xcassets */; };
 		EC96A37B1C54E3CA00B94BF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC96A3791C54E3CA00B94BF5 /* LaunchScreen.storyboard */; };
+		EC96A3871C54E76D00B94BF5 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = EC96A3861C54E76D00B94BF5 /* City.m */; };
+		EC96A38A1C54E85800B94BF5 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC96A3891C54E85800B94BF5 /* CityTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		EC96A3771C54E3CA00B94BF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC96A37A1C54E3CA00B94BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC96A37C1C54E3CA00B94BF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC96A3851C54E76D00B94BF5 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		EC96A3861C54E76D00B94BF5 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		EC96A3881C54E85800B94BF5 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		EC96A3891C54E85800B94BF5 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,11 @@
 		EC96A36A1C54E3CA00B94BF5 /* CityTabProject */ = {
 			isa = PBXGroup;
 			children = (
+				EC96A3841C54E42E00B94BF5 /* Controller */,
+				EC96A3831C54E42600B94BF5 /* View */,
+				EC96A3821C54E41C00B94BF5 /* Model */,
 				EC96A36E1C54E3CA00B94BF5 /* AppDelegate.h */,
 				EC96A36F1C54E3CA00B94BF5 /* AppDelegate.m */,
-				EC96A3711C54E3CA00B94BF5 /* ViewController.h */,
-				EC96A3721C54E3CA00B94BF5 /* ViewController.m */,
 				EC96A3741C54E3CA00B94BF5 /* Main.storyboard */,
 				EC96A3771C54E3CA00B94BF5 /* Assets.xcassets */,
 				EC96A3791C54E3CA00B94BF5 /* LaunchScreen.storyboard */,
@@ -77,6 +84,33 @@
 				EC96A36C1C54E3CA00B94BF5 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC96A3821C54E41C00B94BF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC96A3851C54E76D00B94BF5 /* City.h */,
+				EC96A3861C54E76D00B94BF5 /* City.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EC96A3831C54E42600B94BF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EC96A3841C54E42E00B94BF5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC96A3711C54E3CA00B94BF5 /* ViewController.h */,
+				EC96A3721C54E3CA00B94BF5 /* ViewController.m */,
+				EC96A3881C54E85800B94BF5 /* CityTableViewController.h */,
+				EC96A3891C54E85800B94BF5 /* CityTableViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC96A3731C54E3CA00B94BF5 /* ViewController.m in Sources */,
+				EC96A38A1C54E85800B94BF5 /* CityTableViewController.m in Sources */,
 				EC96A3701C54E3CA00B94BF5 /* AppDelegate.m in Sources */,
+				EC96A3871C54E76D00B94BF5 /* City.m in Sources */,
 				EC96A36D1C54E3CA00B94BF5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
