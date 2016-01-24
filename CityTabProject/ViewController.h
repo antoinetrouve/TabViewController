@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *labelRegion;
+@property (weak, nonatomic) IBOutlet UILabel *labelCity;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *labelCountry;
+@property (weak, nonatomic) IBOutlet UILabel *labelHab;
 
 
 @end
