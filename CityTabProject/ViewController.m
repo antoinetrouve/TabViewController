@@ -14,11 +14,14 @@
 @end
 
 @implementation ViewController
-
+@synthesize city;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    City *city = [City new];
+    self.labelCity.text = city.name;
+    self.labelCountry.text = city.country;
+    self.labelRegion.text = city.region;
+    self.labelHab.text = [NSString stringWithFormat:@"%i",city.nbHab ];
     
 }
 
